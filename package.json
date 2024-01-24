@@ -1,0 +1,24 @@
+{
+  "name": "python-electron",
+  "version": "1.0.0",
+  "description": "Investigating the creation of an electron app with python backend",
+  "main": "public/assets/js/main.js",
+  "scripts": {
+    "electron-dev": "electron .",
+    "py-install": "pip install -r requirements.txt",
+    "py-build": "pyinstaller --workpath=api/build --distpath=api/dist app.spec",
+    "electron-build": "electron-builder --config electron-builder.config.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.1.4",
+    "electron-builder": "^24.9.1"
+  },
+  "dependencies": {
+    "axios": "^1.6.5",
+    "electron-is-dev": "^3.0.1",
+    "python-shell": "^5.0.0"
+  }
+}

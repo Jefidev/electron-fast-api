@@ -1,0 +1,25 @@
+{
+    "appId": "be.unamur.hello-electron",
+    "productName": "Hello Electron",
+    "copyright": "Copyright © 2024 ${author}",
+    "extraFiles": {
+        "from": "api/dist/",
+        "to": "lib/",
+        "filter": [
+            "**/**"
+        ]
+    },
+    "directories": {
+        "output": "dist"
+    },
+    "win": {
+        "target": "nsis"
+    },
+    "linux": {
+        "target": "AppImage"
+    },
+    "nsis": {
+        "oneClick": false,
+        "allowToChangeInstallationDirectory": true
+    }
+}
